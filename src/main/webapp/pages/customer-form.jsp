@@ -6,8 +6,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>SAVE CUSTOMER</title>
-	<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
-	<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/add-customer-style.css" />
+<link type="text/css" rel="stylesheet"
+	href="${pageContext.request.contextPath}/css/style.css" />
+<link type="text/css" rel="stylesheet"
+	href="${pageContext.request.contextPath}/css/add-customer-style.css" />
 </head>
 <body>
 	<div id="wrapper">
@@ -15,62 +17,48 @@
 			<h2>CRM - Customer Relationship Manager</h2>
 		</div>
 	</div>
-	
+
 	<div id="container">
 		<h3>Save Customer</h3>
-		
-		<form:form action="saveCustomer" method="post" modelAttribute="customer">
-			
+
+		<form:form action="saveCustomer" method="post"
+			modelAttribute="customer">
+
 			<!-- need to associate this data with customer id -->
-			<form:hidden path="id"/>
-		
+			<form:hidden path="id" />
+
 			<table>
 				<tbody>
 					<tr>
-						<td>
-							First Name
-						</td>
-						<td>
-							<form:input path="firstName"/>
-						</td>
+						<td>First Name</td>
+						<td><form:input path="firstName" /></td>
 					</tr>
-					
+
 					<tr>
-						<td>
-							Last Name
-						</td>
-						<td>
-							<form:input path="lastName"/>
-						</td>
+						<td>Last Name</td>
+						<td><form:input path="lastName" /></td>
 					</tr>
-					
+
 					<tr>
-						<td>
-							Email
-						</td>
-						<td>
-							<form:input path="email"/>
-						</td>
+						<td>Email</td>
+						<td><form:input path="email" /></td>
 					</tr>
 					<tr>
-						<td>
-							
-						</td>
-						<td>
-							<input type='submit' value='save' class='save'/>
-						</td>
+						<td></td>
+						<td><input type='submit' value='save' class='save' /></td>
 					</tr>
-				
+
 				</tbody>
-			</table>	
+			</table>
 		</form:form>
 	</div>
-	
-	<div style='clear;both;'>
+
+	<div style=''>
 		<p>
-			<a href='${pageContext.request.contextPath}/customer/list'>Back to List</a>
+			<a href='${pageContext.request.contextPath}/customer/list'>Back
+				to List</a>
 		</p>
 	</div>
-	
+
 </body>
 </html>
